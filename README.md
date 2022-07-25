@@ -21,19 +21,16 @@ With the intent of tackling each and every one of the aforementioned requirement
 
 The following is a list of the features that were implemented:
 
--   Login and SignUp screen. Since this wasn't a requirement, the authentication here is barely null. The choice of implementing these screens were just to mimic a real world application where a user must enter a set of credentials to access their data. And besides, it was easier to manage the tasks if an association between user and task existed :)
+-   Login and SignUp screen. Since this wasn't a requirement, the authentication here is barely null. The choice of implementing these screens were just to mimic a real world application where a user must enter a set of credentials to access their data. And besides, it was easier to manage the tasks if an association between user and task existed.
 -   Dashboard screen. In this screen the user has access to their collection of tasks. A colletion is just a simple task grouping mechanism. Instead of having the tasks all over the place, we have the ability to categorize them. Obviously, CRUD operations in regards to collections were also implemented.
 -   Collection screen. This is the core feature of the assignment, where a user can create/delete/edit/read their tasks.
 -   404 and Empty State screens. The first screen is used whenever the user makes some typo to the URL, while the second one is used both in Dashboard and Collection screens to indicate that the user does not have any data yet.
--   SUSE's color palette and typography. I tried do develop a solution that would fit perfectly within SUSE's brand design styles and guidelines.
 
 ## Architecture
 
 ![Architecture](./images/architecture.png)
 
 ## Technical Overview
-
-Note that all the tools and frameworks used are open-source :)
 
 ### DevOps
 
@@ -47,7 +44,7 @@ Technologies used:
 Technologies used:
 
 -   React for building the user interface.
--   Redux for state management. Normally, given the simplicity of the task at hand, I would just use React `useState`. However, Redux is a tool that I wanted to learn ever since I started developing with React so I took the oportunity to learn it while I developed this assignment.
+-   Redux for state management.
 -   Material UI as a repository of React components ready to be used.
 -   React Router to create the routing between the webapp's pages.
 -   Proptypes to add a type layer to all components of the webapp and ease their development as well as their debugging.
@@ -56,9 +53,9 @@ Technologies used:
 
 Technologies used:
 
--   FastAPI. I haven't that much of experience with API design and implementation, therefore I chose the framework that would be easier for me to develop a stable API with.
--   PostgreSQL. I have more experience with relational databases than with non-relational ones, thus the DB choice was simple: PostgreSQL or MySQL. I chose PostgreSQL because I'm more used to it.
--   SQLAlchemy. This tool enabled me to write SQL queries within the API's python code which eased the DB accesses.
+-   FastAPI
+-   PostgreSQL
+-   SQLAlchemy
 
 ## Setup Instructions
 
